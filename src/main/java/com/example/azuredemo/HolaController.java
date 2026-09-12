@@ -14,4 +14,9 @@ public class HolaController {
     public String hola() {
         return mensaje;
     }
+
+    @GetMapping("/version")
+    public String version() {
+        return "Version 2 desplegada automaticamente con GitHub Actions";
+    }
 }
